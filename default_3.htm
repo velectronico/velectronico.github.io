@@ -1,0 +1,2708 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252"/>
+ <meta name="Generator" content="Xara HTML filter v.6.0.4.417"/>
+ <meta name="XAR Files" content="default_htm_files/xr_files.txt"/>
+ <title>default_3</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/xr_main.css"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/xr_text.css"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/custom_styles.css"/>
+ <script type="text/javascript" src="default_htm_files/roe.js"></script>
+</head>
+<body style="background-color: #FFFFFF">
+<div class="xr_ap" id="xr_xr" style="width: 1001px; height: 7674px; top:0px; left:50%; margin-left: -501px;">
+ <script type="text/javascript">var xr_xr=document.getElementById("xr_xr")</script>
+<div class="xr_ap" id="xr_xri" style="width: 1001px; height: 7674px;">
+ <img class="xr_ap" src="default_htm_files/57.png" alt="" title="" style="left: 19px; top: 136px; width: 973px; height: 7537px;"/>
+ <img class="xr_ap" src="default_htm_files/58.png" alt="" title="" style="left: 30px; top: 5234px; width: 977px; height: 2374px;"/>
+ <div class="xr_s1" style="position: absolute; left:62px; top:204px;">
+  <span class="xr_tl xr_s1" style="top: -19px;"><span id="El:32CAN-BUS">El CAN-BUS</span></span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:223px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Bueno, entremos en palabras mayores. Para seguir teniendo el control sobre la configuraci&#243;n del veh&#237;culo necesitamos enviar las ordenes al sistema </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:240px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">central del veh&#237;culo (BSI). Dichas &#243;rdenes fluyen por el CAN-BUS, sistema industrial que est&#225; actualmente implantado en la mayor&#237;a de los autom&#243;viles </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:257px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">y sistemas industriales. En la web hay multitud de informaci&#243;n de como funciona el est&#225;ndar, pero no as&#237;, de lo que hace cada fabricante cuando lo </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:273px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">aplica.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:307px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Para nuestro caso podemos ir por el camino m&#225;s corto, que ser&#237;a comprar m&#243;dulos que venden algunos fabricantes de radios para seguir utilizando los </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:323px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">mandos del volante y/o evitar la perdida del control del men&#250; de la pantalla multifunci&#243;n. Como estamos en tiempo de crisis y la parienta no nos deja </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:340px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">gastar m&#225;s dinero, hay que investigar como los se&#241;ores de Peugeot se han currado lo del CAN-BUS.</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:62px; top:398px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">Investigaci&#243;n profunda</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:415px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Hay que realizar un sistema capaz de capturar tr&#225;fico (informaci&#243;n) que fluye por la l&#237;nea CAN-BUS que nos interesa. Digo lo de la l&#237;nea que nos </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:432px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">interesa, por que el Peugeot 308 dispone de diferentes buses que enlaza elementos seg&#250;n su funcionalidad y prioridad a la hora de gestionar los </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:449px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">sistemas internos. Todos los buses confluyen en la BSI (Unidad de Servicios Inteligente) para compartir la informaci&#243;n que pueda se &#250;til entre </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:466px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">diferentes sistemas.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:499px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">El bus que nos interesa es el encargado de controlar los elementos m&#225;s superficiales (radio, </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:516px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">climatizaci&#243;n, asientos, indicadores, etc), y recibe el nombre de CAN CONFORT.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:532px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Trabaja a una velocidad de 125kbit/s en formato est&#225;ndar (no he podido detectar ninguna </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:549px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">transmisi&#243;n en modo extendido).</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:583px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Desarrollando un peque&#241;o circuito conversor que conectado a un PC, se realizan capturas de </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:599px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">todo el tr&#225;fico que se genera cada vez que se ejecuta una operaci&#243;n en el veh&#237;culo. </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:633px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">El dispositivo lo conecto directamente a la l&#237;nea CAN CONFORT (no al conector de diagnosis </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:649px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">OBD) e investigo la informaci&#243;n que solo fluye por dicho bus.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:683px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Resumo brevemente el proceso en el siguiente dibujo:</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/61.png" alt="" title="" style="left: 352px; top: 1036px; width: 134px; height: 108px;"/>
+ <img class="xr_ap" src="default_htm_files/62.png" alt="" title="" style="left: 172px; top: 795px; width: 136px; height: 92px;"/>
+ <img class="xr_ap" src="default_htm_files/63.png" alt="" title="" style="left: 45px; top: 957px; width: 452px; height: 34px;"/>
+ <img class="xr_ap" src="default_htm_files/64.png" alt="" title="" style="left: 214px; top: 878px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/65.png" alt="" title="" style="left: 233px; top: 877px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/66.png" alt="" title="" style="left: 136px; top: 969px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/67.png" alt="" title="" style="left: 252px; top: 1084px; width: 82px; height: 9px;"/>
+ <div class="xr_s4" style="position: absolute; left:337px; top:995px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">CAN CONFORT</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:195px; top:876px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">BSI</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:89px; top:1149px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Convertidor CAN RS-232</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/68.png" alt="" title="" style="left: 499px; top: 787px; width: 499px; height: 831px;"/>
+ <img class="xr_ap" src="default_htm_files/69.png" alt="" title="" style="left: 197px; top: 1522px; width: 266px; height: 82px;"/>
+ <div class="xr_s3" style="position: absolute; left:62px; top:1310px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">Soft-Hard</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1327px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">El circuito convertidor CAN -> RS232 est&#225; basado en el microcontrolador PIC 18F2480 que tiene implementado</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1344px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">en su hardware un puerto CAN-BUS. Toda la informaci&#243;n que captura es formateada y enviada v&#237;a RS232 al </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1361px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">PC donde es nuevamente formateada y filtrada para un mejor estudio del tr&#225;fico que se genera.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1394px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Dada la gran cantidad de datos que circula por el CAN-BUS, la aplicaci&#243;n del PC tambi&#233;n se ha </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1411px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">desarrollado para enviar al PIC una serie de m&#225;scaras que proporciona un filtrado previo y por ello una </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1428px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">limpieza en el gran flujo de informaci&#243;n.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1461px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Para el estudio y entendimiento de lo que estamos capturando, he formateado la informaci&#243;n tal y como </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1478px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">se muestra en el siguiente ejemplo:</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:62px; top:1716px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">Manos a la obra</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1733px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">En las siguientes tablas se refleja los datos reales de informaci&#243;n que se generan cada vez que se act&#250;a sobre los diferentes elementos del vehiculo,</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:1750px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">(se ha omitido el valor &#8220;N&#186; de datos&#8221; ya que no es relevante):</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/70.png" alt="" title="" style="left: 140px; top: 1944px; width: 442px; height: 191px;"/>
+ <img class="xr_ap" src="default_htm_files/71.png" alt="" title="" style="left: 133px; top: 2308px; width: 196px; height: 72px;"/>
+ <div class="xr_s0" style="position: absolute; left:99px; top:1808px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Mando del volante</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:137px; top:1825px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Relaci&#243;n de identificadores y paquetes de datos CAN-BUS generados por el mando situado en la columna de direcci&#243;n.</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/72.png" alt="" title="" style="left: 139px; top: 2399px; width: 442px; height: 233px;"/>
+ <img class="xr_ap" src="default_htm_files/73.png" alt="" title="" style="left: 137px; top: 1853px; width: 115px; height: 71px;"/>
+ <div class="xr_s3" style="position: absolute; left:114px; top:3673px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">T</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:123px; top:3673px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">ec</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:138px; top:3673px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">l</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:142px; top:3673px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">a mando volante</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3715px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">>>&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3715px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(avanzar)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3716px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;80 00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3737px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">&#60;&#60;&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3737px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(retroceder)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3737px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;40 00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3758px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Vol+&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3758px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(subir&nbsp;volumen)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3758px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;08 00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3778px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Vol-&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3778px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(bajar&nbsp;volumen)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3779px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;04 00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:73px; top:3800px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Memo&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:149px; top:3800px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(giro&nbsp;horario)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3800px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;00 xx&nbsp;00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3820px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Memo&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3820px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(giro&nbsp;antihorario)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3822px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;00 xx&nbsp;00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3842px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Source&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3842px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(fuente de se&#241;al)</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3843px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;02 00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3864px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;0C 00 00</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:345px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">I</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:349px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">D y dat</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:394px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">os</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:408px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">&nbsp;ge</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:427px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">ne</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:443px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">r</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:449px; top:3675px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">ados</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/74.png" alt="" title="" style="left: 65px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/74.png" alt="" title="" style="left: 65px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/75.png" alt="" title="" style="left: 65px; top: 3658px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/76.png" alt="" title="" style="left: 273px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/77.png" alt="" title="" style="left: 273px; top: 3658px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/78.png" alt="" title="" style="left: 65px; top: 3659px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/79.png" alt="" title="" style="left: 303px; top: 3659px; width: 1px; height: 21px;"/>
+ <div class="xr_s0" style="position: absolute; left:73px; top:3695px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Reposo&nbsp; </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:149px; top:3695px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(ninguna&nbsp;tecla&nbsp;pulsada)</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/80.png" alt="" title="" style="left: 65px; top: 3679px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/81.png" alt="" title="" style="left: 65px; top: 3679px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/82.png" alt="" title="" style="left: 273px; top: 3679px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/83.png" alt="" title="" style="left: 273px; top: 3679px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/84.png" alt="" title="" style="left: 65px; top: 3680px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/85.png" alt="" title="" style="left: 303px; top: 3680px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/19.png" alt="" title="" style="left: 65px; top: 3700px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/86.png" alt="" title="" style="left: 65px; top: 3700px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/17.png" alt="" title="" style="left: 273px; top: 3700px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/87.png" alt="" title="" style="left: 273px; top: 3700px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/22.png" alt="" title="" style="left: 65px; top: 3701px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/21.png" alt="" title="" style="left: 303px; top: 3701px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/88.png" alt="" title="" style="left: 65px; top: 3721px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/89.png" alt="" title="" style="left: 65px; top: 3721px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/90.png" alt="" title="" style="left: 273px; top: 3721px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/91.png" alt="" title="" style="left: 273px; top: 3721px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/92.png" alt="" title="" style="left: 65px; top: 3722px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/93.png" alt="" title="" style="left: 303px; top: 3722px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/94.png" alt="" title="" style="left: 65px; top: 3743px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/95.png" alt="" title="" style="left: 65px; top: 3743px; width: 208px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/96.png" alt="" title="" style="left: 273px; top: 3743px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/97.png" alt="" title="" style="left: 273px; top: 3743px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/98.png" alt="" title="" style="left: 65px; top: 3743px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/99.png" alt="" title="" style="left: 303px; top: 3743px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/36.png" alt="" title="" style="left: 65px; top: 3763px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/100.png" alt="" title="" style="left: 65px; top: 3763px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 273px; top: 3763px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/101.png" alt="" title="" style="left: 273px; top: 3763px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/39.png" alt="" title="" style="left: 65px; top: 3764px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 303px; top: 3764px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 65px; top: 3785px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/102.png" alt="" title="" style="left: 65px; top: 3785px; width: 208px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 273px; top: 3785px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/103.png" alt="" title="" style="left: 273px; top: 3785px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/98.png" alt="" title="" style="left: 65px; top: 3785px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/99.png" alt="" title="" style="left: 303px; top: 3785px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/36.png" alt="" title="" style="left: 65px; top: 3805px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/100.png" alt="" title="" style="left: 65px; top: 3805px; width: 208px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 273px; top: 3805px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/101.png" alt="" title="" style="left: 273px; top: 3805px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/39.png" alt="" title="" style="left: 65px; top: 3806px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 303px; top: 3806px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 65px; top: 3827px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/102.png" alt="" title="" style="left: 65px; top: 3827px; width: 208px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 273px; top: 3827px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/103.png" alt="" title="" style="left: 273px; top: 3827px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/104.png" alt="" title="" style="left: 65px; top: 3827px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 65px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 65px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/102.png" alt="" title="" style="left: 65px; top: 3848px; width: 208px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/105.png" alt="" title="" style="left: 303px; top: 3827px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 273px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/103.png" alt="" title="" style="left: 273px; top: 3848px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/36.png" alt="" title="" style="left: 65px; top: 3847px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 273px; top: 3847px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/39.png" alt="" title="" style="left: 65px; top: 3848px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 303px; top: 3848px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 65px; top: 3869px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/102.png" alt="" title="" style="left: 65px; top: 3869px; width: 208px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 273px; top: 3869px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/103.png" alt="" title="" style="left: 273px; top: 3869px; width: 234px; height: 1px;"/>
+ <div class="xr_s0" style="position: absolute; left:362px; top:3695px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">21F&nbsp;00 00 00</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:789px; top:3673px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">Evento generado</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3757px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">MENU</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3779px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">ESC</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3715px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Tecla derecha</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3736px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Tecla izquierda</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3799px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Tecla arriba</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3820px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Tecla abajo</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3842px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">OK</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3863px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">DARK</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/74.png" alt="" title="" style="left: 739px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/106.png" alt="" title="" style="left: 739px; top: 3658px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/76.png" alt="" title="" style="left: 972px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/76.png" alt="" title="" style="left: 972px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/78.png" alt="" title="" style="left: 739px; top: 3659px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/79.png" alt="" title="" style="left: 972px; top: 3659px; width: 1px; height: 21px;"/>
+ <div class="xr_s0" style="position: absolute; left:755px; top:3694px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Reposo</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/80.png" alt="" title="" style="left: 739px; top: 3679px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/107.png" alt="" title="" style="left: 739px; top: 3679px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/82.png" alt="" title="" style="left: 972px; top: 3679px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/108.png" alt="" title="" style="left: 739px; top: 3680px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/109.png" alt="" title="" style="left: 972px; top: 3680px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/74.png" alt="" title="" style="left: 739px; top: 3700px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/106.png" alt="" title="" style="left: 739px; top: 3700px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/76.png" alt="" title="" style="left: 972px; top: 3700px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/78.png" alt="" title="" style="left: 739px; top: 3701px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/79.png" alt="" title="" style="left: 972px; top: 3701px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/80.png" alt="" title="" style="left: 739px; top: 3721px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/107.png" alt="" title="" style="left: 739px; top: 3721px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/82.png" alt="" title="" style="left: 972px; top: 3721px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/110.png" alt="" title="" style="left: 739px; top: 3722px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/111.png" alt="" title="" style="left: 972px; top: 3722px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 739px; top: 3743px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/43.png" alt="" title="" style="left: 739px; top: 3743px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 972px; top: 3743px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/112.png" alt="" title="" style="left: 739px; top: 3743px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/113.png" alt="" title="" style="left: 972px; top: 3743px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/88.png" alt="" title="" style="left: 739px; top: 3763px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/114.png" alt="" title="" style="left: 739px; top: 3763px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/90.png" alt="" title="" style="left: 972px; top: 3763px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/92.png" alt="" title="" style="left: 739px; top: 3764px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/93.png" alt="" title="" style="left: 972px; top: 3764px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/94.png" alt="" title="" style="left: 739px; top: 3785px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/115.png" alt="" title="" style="left: 739px; top: 3785px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/96.png" alt="" title="" style="left: 972px; top: 3785px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/98.png" alt="" title="" style="left: 739px; top: 3785px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/99.png" alt="" title="" style="left: 972px; top: 3785px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/36.png" alt="" title="" style="left: 739px; top: 3805px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/37.png" alt="" title="" style="left: 739px; top: 3805px; width: 234px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 972px; top: 3805px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/39.png" alt="" title="" style="left: 739px; top: 3806px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 972px; top: 3806px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 739px; top: 3827px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/43.png" alt="" title="" style="left: 739px; top: 3827px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 972px; top: 3827px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/104.png" alt="" title="" style="left: 739px; top: 3827px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/43.png" alt="" title="" style="left: 739px; top: 3848px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/105.png" alt="" title="" style="left: 972px; top: 3827px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 972px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 972px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/36.png" alt="" title="" style="left: 739px; top: 3847px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 972px; top: 3847px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/39.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 972px; top: 3848px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/42.png" alt="" title="" style="left: 739px; top: 3869px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/116.png" alt="" title="" style="left: 739px; top: 3869px; width: 234px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 972px; top: 3869px; width: 1px; height: 1px;"/>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3759px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 40 00&nbsp;00&nbsp;00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3778px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;10&nbsp;00 04</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3715px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;00&nbsp;00 04</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3737px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;00&nbsp;00 01</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3800px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;00&nbsp;00 40</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3822px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;00&nbsp;00 10</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3843px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;40&nbsp;00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3864px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;04&nbsp;00 00</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:563px; top:3674px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">I</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:567px; top:3674px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">D y dat</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:612px; top:3674px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">os</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:626px; top:3674px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">&nbsp;convertidos</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/117.png" alt="" title="" style="left: 505px; top: 3658px; width: 2px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/118.png" alt="" title="" style="left: 506px; top: 3658px; width: 233px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/17.png" alt="" title="" style="left: 739px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/17.png" alt="" title="" style="left: 739px; top: 3658px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/119.png" alt="" title="" style="left: 515px; top: 3659px; width: 2px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/21.png" alt="" title="" style="left: 739px; top: 3659px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/120.png" alt="" title="" style="left: 505px; top: 3679px; width: 2px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/121.png" alt="" title="" style="left: 506px; top: 3679px; width: 233px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/90.png" alt="" title="" style="left: 739px; top: 3679px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/122.png" alt="" title="" style="left: 515px; top: 3680px; width: 2px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/27.png" alt="" title="" style="left: 739px; top: 3680px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/123.png" alt="" title="" style="left: 505px; top: 3700px; width: 2px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/124.png" alt="" title="" style="left: 506px; top: 3700px; width: 233px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/29.png" alt="" title="" style="left: 739px; top: 3700px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/125.png" alt="" title="" style="left: 515px; top: 3701px; width: 2px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/33.png" alt="" title="" style="left: 739px; top: 3701px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/126.png" alt="" title="" style="left: 505px; top: 3721px; width: 2px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/127.png" alt="" title="" style="left: 506px; top: 3721px; width: 233px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 739px; top: 3721px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/128.png" alt="" title="" style="left: 515px; top: 3722px; width: 2px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 739px; top: 3722px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/129.png" alt="" title="" style="left: 505px; top: 3743px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/130.png" alt="" title="" style="left: 506px; top: 3743px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 739px; top: 3743px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/131.png" alt="" title="" style="left: 515px; top: 3743px; width: 2px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/99.png" alt="" title="" style="left: 739px; top: 3743px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/126.png" alt="" title="" style="left: 505px; top: 3763px; width: 2px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/127.png" alt="" title="" style="left: 506px; top: 3763px; width: 233px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/23.png" alt="" title="" style="left: 739px; top: 3763px; width: 1px; height: 2px;"/>
+ <img class="xr_ap" src="default_htm_files/128.png" alt="" title="" style="left: 515px; top: 3764px; width: 2px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/38.png" alt="" title="" style="left: 739px; top: 3764px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/129.png" alt="" title="" style="left: 505px; top: 3785px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/130.png" alt="" title="" style="left: 506px; top: 3785px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/40.png" alt="" title="" style="left: 739px; top: 3785px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/132.png" alt="" title="" style="left: 515px; top: 3785px; width: 2px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/133.png" alt="" title="" style="left: 739px; top: 3785px; width: 1px; height: 21px;"/>
+ <img class="xr_ap" src="default_htm_files/134.png" alt="" title="" style="left: 505px; top: 3806px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/135.png" alt="" title="" style="left: 506px; top: 3806px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/136.png" alt="" title="" style="left: 739px; top: 3806px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/137.png" alt="" title="" style="left: 515px; top: 3806px; width: 2px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/138.png" alt="" title="" style="left: 739px; top: 3806px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/134.png" alt="" title="" style="left: 505px; top: 3827px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/139.png" alt="" title="" style="left: 506px; top: 3827px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/96.png" alt="" title="" style="left: 739px; top: 3827px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/140.png" alt="" title="" style="left: 515px; top: 3827px; width: 2px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/134.png" alt="" title="" style="left: 505px; top: 3848px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/135.png" alt="" title="" style="left: 506px; top: 3848px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/141.png" alt="" title="" style="left: 739px; top: 3827px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/136.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/136.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/134.png" alt="" title="" style="left: 505px; top: 3848px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/136.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/137.png" alt="" title="" style="left: 515px; top: 3848px; width: 2px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/138.png" alt="" title="" style="left: 739px; top: 3848px; width: 1px; height: 22px;"/>
+ <img class="xr_ap" src="default_htm_files/134.png" alt="" title="" style="left: 505px; top: 3869px; width: 2px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/139.png" alt="" title="" style="left: 506px; top: 3869px; width: 233px; height: 1px;"/>
+ <img class="xr_ap" src="default_htm_files/96.png" alt="" title="" style="left: 739px; top: 3869px; width: 1px; height: 1px;"/>
+ <div class="xr_s0" style="position: absolute; left:576px; top:3695px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">3E5 00 00&nbsp;00&nbsp;00 00</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:74px; top:3863px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Vol+&nbsp; y&nbsp; Vol- </span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:150px; top:3863px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">(subir&nbsp;y bajar volumen)</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:136px; top:2178px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Trama generada cada 250ms aprox.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:136px; top:2195px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">* valor xx comprende desde 00 hasta FF en funci&#243;n del giro del mando &#8220;Memo&#8221;</span>
+ </div>
+ <div class="xr_s0" style="position: absolute; left:99px; top:2258px;">
+  <span class="xr_tl xr_s0" style="top: -13px;">Radio-cd (RD4)</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:137px; top:2275px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Identificadores y datos CAN-BUS que se generan pulsando la botonera del radio-cd:</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:137px; top:2659px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Trama generada cada 500ms aprox.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:101px; top:2747px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">De forma gr&#225;fica se muestra el flujo de informaci&#243;n entre los diferentes elementos y la nueva filosof&#237;a de control del sistema:</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/142.png" alt="" title="" style="left: 41px; top: 2765px; width: 957px; height: 406px;"/>
+ <img class="xr_ap" src="default_htm_files/143.png" alt="" title="" style="left: 434px; top: 2833px; width: 135px; height: 93px;"/>
+ <img class="xr_ap" src="default_htm_files/144.png" alt="" title="" style="left: 156px; top: 2921px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/145.png" alt="" title="" style="left: 454px; top: 2924px; width: 9px; height: 82px;"/>
+ <div class="xr_s4" style="position: absolute; left:423px; top:3048px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">CAN CONFORT</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:493px; top:2831px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">BSI</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/146.png" alt="" title="" style="left: 738px; top: 2847px; width: 139px; height: 68px;"/>
+ <img class="xr_ap" src="default_htm_files/147.png" alt="" title="" style="left: 67px; top: 3004px; width: 888px; height: 37px;"/>
+ <div class="xr_s4" style="position: absolute; left:133px; top:2839px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Radio-CD</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/148.png" alt="" title="" style="left: 144px; top: 2904px; width: 9px; height: 96px;"/>
+ <img class="xr_ap" src="default_htm_files/149.png" alt="" title="" style="left: 466px; top: 2907px; width: 11px; height: 97px;"/>
+ <img class="xr_ap" src="default_htm_files/150.png" alt="" title="" style="left: 522px; top: 2908px; width: 281px; height: 83px;"/>
+ <div class="xr_s4" style="position: absolute; left:599px; top:2985px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Presentaci&#243;n men&#250; en display</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/151.png" alt="" title="" style="left: 66px; top: 2844px; width: 196px; height: 73px;"/>
+ <div class="xr_s4" style="position: absolute; left:57px; top:2792px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Instalaci&#243;n original</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/152.png" alt="" title="" style="left: 42px; top: 3169px; width: 957px; height: 407px;"/>
+ <img class="xr_ap" src="default_htm_files/153.png" alt="" title="" style="left: 439px; top: 3205px; width: 135px; height: 93px;"/>
+ <img class="xr_ap" src="default_htm_files/154.png" alt="" title="" style="left: 127px; top: 3296px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/155.png" alt="" title="" style="left: 460px; top: 3296px; width: 9px; height: 82px;"/>
+ <img class="xr_ap" src="default_htm_files/156.png" alt="" title="" style="left: 341px; top: 3398px; width: 9px; height: 83px;"/>
+ <img class="xr_ap" src="default_htm_files/157.png" alt="" title="" style="left: 333px; top: 3483px; width: 75px; height: 65px;"/>
+ <div class="xr_s4" style="position: absolute; left:429px; top:3420px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">CAN CONFORT</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:499px; top:3204px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">BSI</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/158.png" alt="" title="" style="left: 83px; top: 3232px; width: 115px; height: 71px;"/>
+ <img class="xr_ap" src="default_htm_files/159.png" alt="" title="" style="left: 72px; top: 3376px; width: 888px; height: 37px;"/>
+ <img class="xr_ap" src="default_htm_files/160.png" alt="" title="" style="left: 385px; top: 3398px; width: 9px; height: 83px;"/>
+ <div class="xr_s4" style="position: absolute; left:99px; top:3226px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Mando volante</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:408px; top:3521px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Convertidor</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/161.png" alt="" title="" style="left: 115px; top: 3303px; width: 11px; height: 61px;"/>
+ <img class="xr_ap" src="default_htm_files/162.png" alt="" title="" style="left: 331px; top: 3405px; width: 11px; height: 61px;"/>
+ <img class="xr_ap" src="default_htm_files/163.png" alt="" title="" style="left: 399px; top: 3403px; width: 10px; height: 96px;"/>
+ <img class="xr_ap" src="default_htm_files/164.png" alt="" title="" style="left: 472px; top: 3278px; width: 10px; height: 97px;"/>
+ <img class="xr_ap" src="default_htm_files/165.png" alt="" title="" style="left: 528px; top: 3280px; width: 280px; height: 83px;"/>
+ <div class="xr_s4" style="position: absolute; left:605px; top:3357px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Presentaci&#243;n men&#250; en display</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:57px; top:3199px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Instalaci&#243;n modificada</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/166.png" alt="" title="" style="left: 742px; top: 3221px; width: 139px; height: 68px;"/>
+ <div class="xr_s2" style="position: absolute; left:62px; top:3623px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">En la siguiente tabla se detalla la asociaci&#243;n de cada uno de los c&#243;digos generados por el mando en el volante y los que corresponder&#237;an a los enviados </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:3639px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">desde el radio-cd.</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/167.png" alt="" title="" style="left: 662px; top: 3924px; width: 279px; height: 241px;"/>
+ <div class="xr_s5" style="position: absolute; left:764px; top:4212px;">
+  <span class="xr_tl xr_s5" style="top: -12px;">Descargar</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4008px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">El esquema el&#233;ctrico mostrado, es el mismo que se utiliz&#243; para el estudio del tr&#225;fico CAN-BUS. </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4022px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">La &#250;nica modificaci&#243;n a sido la eliminaci&#243;n del MAX232, y de diferentes elementos como </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4036px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">pulsadores e indicadores LED que me serv&#237;an para la depuraci&#243;n del software.</span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4063px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Todo el circuito se ha metido en una peque&#241;a caja alojada en el interior del salpicadero. </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4077px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">En la foto todav&#237;a tengo puesto el conector DB9 que utilizaba en un principio para poder realizar </span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:62px; top:4091px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">actualizaciones del firmware.</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/169.png" alt="" title="" style="left: 601px; top: 468px; width: 349px; height: 236px;"/>
+ <img class="xr_ap" src="default_htm_files/170.png" alt="" title="" style="left: 83px; top: 1034px; width: 149px; height: 94px;"/>
+ <div class="xr_s4" style="position: absolute; left:598px; top:726px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Circuito utilizado durante el desarrollo del proyecto. Convierte la </span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:598px; top:741px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">informaci&#243;n generada en el CAN-BUS a RS232 para su posterior an&#225;lisis.</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/172.png" alt="" title="" style="left: 35px; top: 4189px; width: 948px; height: 613px;"/>
+ <img class="xr_ap" src="default_htm_files/173.png" alt="" title="" style="left: 35px; top: 4832px; width: 955px; height: 293px;"/>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5282px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5293px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LIST P=18F2480, F=INHX32 </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:238px; top:5293px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;procesador.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5304px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">#include &#60;P18F2480.INC> </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:238px; top:5304px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;include procesador.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5315px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5327px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Configuracion bits </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5338px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5338px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">FCMEN = OFF,&nbsp; OSC = HS,&nbsp; IESO = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5349px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5349px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">PWRT = OFF,&nbsp; BOREN = BOHW,&nbsp; BORV=1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5360px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5360px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">WDT=OFF,&nbsp; WDTPS = 16</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5371px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5371px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MCLRE = ON</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LPT1OSC = OFF,&nbsp; PBADEN = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5394px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5394px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">DEBUG = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5405px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5405px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">XINST = OFF,&nbsp; LVP = OFF,&nbsp; STVREN = ON,&nbsp; CP0 = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5416px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5416px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CP1 = OFF,&nbsp; CPB = OFF,&nbsp; CPD = OFF,&nbsp; WRT0 = OFF,&nbsp; WRT1 = OFF,&nbsp; WRTB = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CONFIG&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:162px; top:5427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">WRTC = OFF,&nbsp; WRTD = OFF,&nbsp; EBTR0 = OFF,&nbsp; EBTR1 = OFF,&nbsp; EBTRB = OFF</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5438px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5450px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Definir variables.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5461px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5472px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CBLOCK 0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5483px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BufferRueda&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5483px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Valor del mando rueda.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5494px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">DivMensaREPOSO&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5494px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Divisor de mensajes REPOSO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5505px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ENDC</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5517px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5550px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5561px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Reset vector </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5572px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------ </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5584px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">&nbsp;ORG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5584px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">0x0000 </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5595px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">goto </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5595px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Main&nbsp;&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5595px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Go to start.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5606px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5639px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5651px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Inicio.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5662px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5673px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">&nbsp;ORG </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5673px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">0x00A0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5684px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Main:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5695px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5695px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5706px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5706px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">DivMensaREPOSO&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5706px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Inicio variable.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5729px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5729px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">IniPort&nbsp;&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5729px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Inicializa puertos.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5740px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5740px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ConfCAN&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5740px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Config. CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5751px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5751px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaREPOSO&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5751px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Enviar teclas en reposo. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5762px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5796px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5807px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5807px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Lectura mensajes CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5818px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5829px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5840px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfss </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5840px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0CON, RXFUL&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5840px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; &#191;Contiene mensage CAN?</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5852px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5852px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5852px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Lectura de mensajes CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5874px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bcf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5874px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0CON, RXFUL&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5874px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Limpiar flag RXFUL mensage CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5885px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">clrf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5885px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">PIR3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5908px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5908px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00000000'</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5919px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">cpfseq </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5919px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5930px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5930px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TeclaPulsada&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5930px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Procesar las teclas pulsadas.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5952px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Comprobar si se ha movido en mando rueda.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:5963px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ControlRueda:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5975px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5975px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BufferRueda, W&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5986px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">cpfseq </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5986px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D1&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:5986px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; &#191;Son iguales?</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:5997px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:5997px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MovMandoRueda</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6019px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bsf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6019px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">PORTC,0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6030px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6030px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaREPOSO&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6030px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Enviar teclas en reposo.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6042px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bcf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6042px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">PORTC,0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6064px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6064px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6064px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; No hay movimiento de mando rueda. Salir. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6086px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Comprobar si el movimiento mando rueda es ARRIBA o ABAJO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6097px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MovMandoRueda:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6109px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6109px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BufferRueda, W&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6120px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">cpfsgt </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6120px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D1&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6120px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; &#191;Nuevo valor es mayor que el &#250;ltimo?</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6131px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6131px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MovMandoRuedaABJ</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6153px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Movimiento mando rueda ARRIBA.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6164px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MovMandoRuedaARR:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6176px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6176px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D1, W&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6176px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Guardar nuevo valor del mando rueda. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6187px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6187px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BufferRueda</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6198px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6198px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaARR&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6198px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Enviar mensaje ARRIBA.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6209px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6209px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6209px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Salir. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6231px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Movimiento mando rueda ABAJO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6243px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MovMandoRuedaABJ:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6254px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6254px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D1, W&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6254px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Guardar nuevo valor del mando rueda. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6265px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6265px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BufferRueda</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6276px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6276px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaABA&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6276px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Enviar mensaje ABAJO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6287px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6287px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6287px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Salir.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6310px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Procesamiento de la tecla pulsada.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6321px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TeclaPulsada:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6332px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6332px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">b'00001100'&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6332px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado vol.+ y vol.- a la vez.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6343px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">cpfseq </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6343px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6343px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; para generar "DARK". </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6354px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6354px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TeclaPulsada_Bis&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6354px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; No se han pulsado a la vez.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6366px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6366px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaDARK&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6366px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "DARK".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6377px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6377px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6399px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TeclaPulsada_Bis</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6410px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6410px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0,3&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6410px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado volumen + (21F 08 00 00).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6421px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6421px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaMENU&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6421px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "MENU".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6433px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6433px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0,2&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6433px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado volumen - (21F 04 00 00).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6444px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6444px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaESC&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6444px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "ESC".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6455px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6455px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0,6&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6455px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado Retroceder &#60;&#60; (21F 40 00 00).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6466px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6466px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaIZQ&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6466px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "IZQ".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6477px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6477px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0,7&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6477px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado Abanzar >> (21F 80 00 00).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6488px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6488px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaDER&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6488px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "DER".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6500px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6500px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0D0,1&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6500px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Pulsado Source (21F 02 00 00).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6511px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6511px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaOK&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6511px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Generar mensaje "OK".</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6522px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6522px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">LecturaCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6533px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6567px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6578px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6578px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje REPOSO (ninguna tecla pulsada).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6589px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6600px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaREPOSO:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6611px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Se divide la cadencia del n&#250;mero de mensajes de REPOSO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6622px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">decfsz </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6622px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">DivMensaREPOSO, F</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6634px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6645px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6645px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6656px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6656px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">DivMensaREPOSO&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:276px; top:6656px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Inicio variable.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6678px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6678px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6689px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6701px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6701px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6712px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6712px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6723px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6723px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6734px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6734px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6745px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6745px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6756px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6756px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6768px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6768px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6779px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6779px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6790px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6790px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6801px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6801px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6812px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6812px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6823px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6823px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6835px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6835px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6846px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6857px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6868px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6879px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6879px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje MENU.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6891px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6902px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaMENU:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6913px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6913px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:6924px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6935px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6935px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">40h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6946px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6946px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6958px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6958px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6969px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6969px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6980px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6980px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:6991px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:6991px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7002px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7002px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7013px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7013px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7025px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7025px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7036px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7036px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7047px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7047px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7058px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7058px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7069px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7069px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7080px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7092px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7103px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7114px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7114px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje ESC.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7125px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7136px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaESC:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7147px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7147px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7159px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7170px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7170px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7181px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7181px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7192px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7192px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7203px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7203px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7214px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7214px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">10h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7226px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7226px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7237px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7237px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7248px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7248px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7259px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7259px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7270px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7270px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7293px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7293px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7304px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7304px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7315px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7337px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7349px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7349px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje IZQ.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7360px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7371px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaIZQ:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7404px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7404px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7416px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7416px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7438px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7438px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7449px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7449px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7460px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7460px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7471px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7471px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7483px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7483px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7494px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7494px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7505px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7505px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7516px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7516px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">01h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7527px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7527px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7538px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:125px; top:7538px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:87px; top:7550px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:49px; top:7561px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5292px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5292px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje DER.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5304px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5315px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaDER:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5337px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5348px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5348px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5359px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5359px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5371px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5371px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5382px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5404px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5404px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5415px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5415px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5427px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5438px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5438px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5449px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5449px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5460px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5460px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">04h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5471px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5471px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5482px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5482px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5494px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5505px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5516px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5527px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5527px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje OK.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5538px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5549px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaOK:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5561px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5561px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5572px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5583px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5583px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5594px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5594px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5605px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5605px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5616px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5616px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5628px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5628px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">40h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5639px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5639px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5650px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5650px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5661px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5661px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5672px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5672px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5683px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5683px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5695px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5695px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5706px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5706px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5717px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5717px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5728px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5739px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5750px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5762px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5762px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje ARRIBA.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5773px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5784px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaARR:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5795px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5795px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5806px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5817px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5817px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5829px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5829px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5840px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5840px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5851px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5851px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5862px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5862px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5873px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5873px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5885px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5885px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5896px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5896px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5907px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5907px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5918px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5918px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5929px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5929px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">40h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5940px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5940px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5952px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:5952px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5963px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5974px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5985px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:5996px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:5996px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje ABAJO.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6007px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6019px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaABA:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6030px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6030px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6041px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6052px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6052px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6063px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6063px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6074px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6074px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6086px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6086px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6097px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6097px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6108px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6108px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6119px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6119px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6130px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6130px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6141px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6141px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6153px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6153px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6164px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6164px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">10h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6175px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6175px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6186px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6186px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6197px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6208px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6220px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6231px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6231px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Mensaje DARK.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6242px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6253px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">MensaDARK:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6264px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6264px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6275px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Preparaci&#243;n mensaje a enviar. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6287px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6287px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6298px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6298px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6309px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6309px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6320px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6320px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6331px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6331px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">04h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6343px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6343px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6354px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6354px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6365px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6365px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6376px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6376px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6387px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6387px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D4</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6398px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6398px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">00h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6410px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6410px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0D5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6421px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">call </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6421px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6432px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6443px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6477px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6488px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6488px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Cabecera comun mensaje CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6499px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6510px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CabeceraCAN:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6521px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;N&#186; de datos a transmitir = 6</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6532px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6532px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">06h</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6544px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6544px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0DLC </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6544px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Tama&#241;o datos.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6566px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;Transmitir&nbsp;&nbsp; ID = 3E5</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6577px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6577px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'10100000' </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6577px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; SID2 SID1 SID0&nbsp; ----&nbsp; EXIDE&nbsp; ----&nbsp; ESID-&nbsp; ESID-&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6588px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6588px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0SIDL </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6588px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Identificador TXB0SIDL.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6599px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6599px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'01111100' </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6599px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; SID10 SID9 SID8 SID7 SID6 SID5 SID4 SID3&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6611px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6611px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0SIDH </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6611px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Identificador TXB0SIDH.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6633px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6633px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00001000' </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6633px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Transmitir mensaje.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6644px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6644px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0CON</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6666px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">EnvioMesaCAN: </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6678px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">btfsc </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6678px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TXB0CON, TXREQ</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6689px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6689px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">EnvioMesaCAN</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6711px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6711px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6733px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6745px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6778px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6789px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Configuraci&#243;n PORT:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6800px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6800px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RA0 pulsador P0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6812px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6812px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RA1 pulsador P1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6823px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6834px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6834px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RC0 Led&nbsp; L0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6845px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6845px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RC1 Led&nbsp; L1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6856px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6868px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">IniPort:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6879px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6879px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">0Fh&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6879px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Configura RA como digital.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6890px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6890px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ADCON1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6901px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">setf&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6901px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TRISA&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6901px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; RA&#60;7:0> como entradas.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6923px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6923px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">b'11111100' </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:6923px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; RC&#60;7:2> entrada y RC&#60;1:0> como salida.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6935px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6935px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">TRISC</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6946px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">clrf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:6946px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">PORTC</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:6968px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:6979px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7013px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7024px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7024px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">Configuraci&#243;n CAN.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7035px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7046px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ConfCAN:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7057px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7057px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'10000000'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7057px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Request Configuration mode.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7069px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7069px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CANCON&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7069px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Set to Configuration Mode.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7091px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Module will wait for CAN bus to be idle before switching to Configuration Mode.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7102px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ConfigWait:</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7113px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7113px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CANSTAT, W&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7113px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Read current mode state.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7124px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">xorlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7124px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'10000000'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7124px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Interested in OPMODE bits only.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7136px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">tstfsz </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7136px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">WREG&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7136px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Is it Configuration mode yet?</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7147px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">bra </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7147px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">ConfigWait&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7147px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; No. Continue to wait...</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7169px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Modulo CAN esta en Configuration mode.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7180px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7180px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00000100'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7180px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; SJW=1, BRP=4 (125Khz).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7191px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7191px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BRGCON1</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7203px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7203px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'10110001'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7203px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; SEG=7, PRSEG=2.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7214px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7214px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BRGCON2</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7225px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7225px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00000101'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7225px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; SEG2PH=6.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7236px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7236px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">BRGCON3</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7247px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7247px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00100000'&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7247px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Rec. only valid messages SID.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7258px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7258px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXB0CON&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7258px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Disable double buffer of RX0</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">.15&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7281px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Banco 15. </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7292px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7292px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'11111111'</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7303px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7303px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXM0SIDH </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:7303px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Colocar valores Mascara byte RXM0SIDH.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7314px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7314px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'11100000'</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXM0SIDL </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:7326px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Colocar valores Mascara byte RXM0SIDL.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7348px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;Leer solamente el ID=21F (c&#243;digos generados desde el mando volante).</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7359px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7359px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'01000011'</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7370px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7370px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXF0SIDH </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:7370px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Colocar valores Filtro byte RXF0SIDH.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7381px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7381px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'11100000' </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">RXF0SIDL </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:743px; top:7393px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Colocar valores Filtro byte RXF0SIDL.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7415px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlb </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7415px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">0&nbsp;&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7415px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Banco 0.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7437px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movlw </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7437px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">B'00000000'</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7448px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">movwf </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:668px; top:7448px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">CANCON&nbsp; </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:781px; top:7448px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">; Request Normal Mode.</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7471px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">return</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7482px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;------------------------------------------------------------------------</span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:592px; top:7504px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">;End of program </span>
+ </div>
+ <div class="xr_s6" style="position: absolute; left:630px; top:7515px;">
+  <span class="xr_tl xr_s6" style="top: -9px;">END</span>
+ </div>
+ <div class="xr_s3" style="position: absolute; left:48px; top:5259px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">Firmware microcontrolador</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:323px; top:5144px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Detalle del conector Frakra donde se toma la alimentaci&#243;n y&nbsp; la l&#237;nea CAN-CONF.</span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/53.png" alt="" title="" style="left: 19px; top: 16px; width: 973px; height: 120px;"/>
+ <img class="xr_ap" src="default_htm_files/168.png" alt="" title="" style="left: 598px; top: 99px; width: 162px; height: 150px;"/>
+ <img class="xr_ap" src="default_htm_files/54.png" alt="" title="" style="left: 990px; top: 24px; width: 2px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:22px; top:35px;font-weight:bold;font-size:11px;color:#FFF7FB;">
+  <span class="xr_tc Normal_text" style="left: -2px; top: -10px; width: 129px;font-weight:bold;font-size:11px;color:#FFF7FB;">Bricos Peugeot 308</span>
+ </div>
+ <div class="Normal_text" style="position: absolute; left:368px; top:35px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: 33px; top: -10px; width: 37px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default.php" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Inicio</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/901.png" alt="" title="" style="left: 336px; top: 24px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:510px; top:35px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -11px; top: -10px; width: 169px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_2.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Modificaciones Interiores</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/902.png" alt="" title="" style="left: 500px; top: 24px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:701px; top:35px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -5px; top: -10px; width: 101px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_7.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Diagnosis OBD</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/903.png" alt="" title="" style="left: 663px; top: 24px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:872px; top:35px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -6px; top: -10px; width: 88px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_10.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Sistema HHO</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/904.png" alt="" title="" style="left: 826px; top: 24px; width: 3px; height: 17px;"/>
+ <img class="xr_ap" src="default_htm_files/905.png" alt="" title="" style="left: 267px; top: 61px; width: 477px; height: 56px;"/>
+ <a href="default_2.htm" onclick="return(xr_nn());">
+  <img class="xr_ap" src="default_htm_files/1490.png" alt="" title="" onmousemove="xr_mo(this,0,event)" style="left: 460px; top: 7608px; width: 52px; height: 52px;"/>
+ </a>
+ <a href="default_4.htm" onclick="return(xr_nn());">
+  <img class="xr_ap" src="default_htm_files/1491.png" alt="" title="" onmousemove="xr_mo(this,0,event)" style="left: 495px; top: 7608px; width: 52px; height: 52px;"/>
+ </a>
+ <div class="Normal_text" style="position: absolute; left:544px; top:7636px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;">
+  <span class="xr_tl Normal_text" style="top: -10px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;"><a href="default_4.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" >P&#225;g. siguiente</a></span>
+ </div>
+ <div class="Normal_text" style="position: absolute; left:396px; top:7636px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;">
+  <span class="xr_tl Normal_text" style="top: -10px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;"><a href="default_2.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" >P&#225;g. anterior</a></span>
+ </div>
+ <div id="xr_xo0" class="xr_ap" style="left:0; top:0; width:1001px; height:100px; visibility:hidden;">
+ <a href="" onclick="return(false);">
+ </a>
+ </div>
+ <div id="xr_xd0"></div>
+</div>
+</div>
+<!--[if lt IE 7]><script type="text/javascript" src="default_htm_files/png.js"></script><![endif]-->
+<!--[if IE]><script type="text/javascript">xr_aeh()</script><![endif]--><!--[if !IE]>--><script type="text/javascript">window.addEventListener('load', xr_aeh, false);</script><!--<![endif]-->
+</body>
+</html>

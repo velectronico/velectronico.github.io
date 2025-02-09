@@ -1,0 +1,302 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=Windows-1252"/>
+ <meta name="Generator" content="Xara HTML filter v.6.0.4.417"/>
+ <meta name="XAR Files" content="default_htm_files/xr_files.txt"/>
+ <title>default_13</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/xr_main.css"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/xr_text.css"/>
+ <link rel="stylesheet" type="text/css" href="default_htm_files/custom_styles.css"/>
+ <script type="text/javascript" src="default_htm_files/roe.js"></script>
+</head>
+<body style="background-color: #FFFFFF">
+<div class="xr_ap" id="xr_xr" style="width: 1005px; height: 4382px; top:0px; left:50%; margin-left: -503px;">
+ <script type="text/javascript">var xr_xr=document.getElementById("xr_xr")</script>
+ <span class="xr_ar" style="left: 19px; top: 138px; width: 973px; height: 4244px; background-color: #FFF7FB;"></span>
+ <!--[if lt IE 9]>
+ <img class="xr_ap" src="default_htm_files/1275.png" alt="" title="" style="left: 55px; top: 731px; width: 587px; height: 1638px;"/>
+ <![endif]-->
+ <!--[if gte IE 9]><!-->
+ <span class="xr_ar" style="left: 56px; top: 732px; width: 573px; height: 1629px; box-shadow: 10px 4px 2px rgba(0,0,0,0.25); background-color: #F8E4F6;"></span>
+ <!--<![endif]-->
+ <div class="xr_s3" style="position: absolute; left:83px; top:770px;">
+  <span class="xr_tl xr_s3" style="top: -13px;">C&#243;digo Android (B4A)</span>
+ </div>
+ <div class="xr_s8" style="position: absolute; left:84px; top:791px;">
+  <span class="xr_tl xr_s8" style="top: -8px;">Version=2.52</span>
+  <span class="xr_tl xr_s8" style="top: 2px;">IconFile=</span>
+  <span class="xr_tl xr_s8" style="top: 12px;">NumberOfModules=0</span>
+  <span class="xr_tl xr_s8" style="top: 22px;">Package=anywheresoftware.b4a.samples.serial</span>
+  <span class="xr_tl xr_s8" style="top: 32px;">DoNotOverwriteManifest=False</span>
+  <span class="xr_tl xr_s8" style="top: 42px;">ManifestCode=</span>
+  <span class="xr_tl xr_s8" style="top: 52px;">UserTypesHint=</span>
+  <span class="xr_tl xr_s8" style="top: 62px;">NumberOfFiles=3</span>
+  <span class="xr_tl xr_s8" style="top: 72px;">File1=1.bal</span>
+  <span class="xr_tl xr_s8" style="top: 82px;">File2=LayoutSamsung.bal</span>
+  <span class="xr_tl xr_s8" style="top: 92px;">File3=LayoutSONY.bal</span>
+  <span class="xr_tl xr_s8" style="top: 102px;">NumberOfLibraries=3</span>
+  <span class="xr_tl xr_s8" style="top: 112px;">Library1=audio</span>
+  <span class="xr_tl xr_s8" style="top: 123px;">Library2=core</span>
+  <span class="xr_tl xr_s8" style="top: 133px;">Library3=serial</span>
+  <span class="xr_tl xr_s8" style="top: 143px;">&#64;EndOfDesignText&#64;</span>
+  <span class="xr_tl xr_s8" style="top: 153px;">#Region Module Attributes</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 163px;">#FullScreen: False</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 173px;">#IncludeTitle: True</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 183px;">#ApplicationLabel: HHO Monitor</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 193px;">#VersionCode: 1</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 203px;">#VersionName: </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 213px;">#SupportedOrientations: unspecified</span>
+  <span class="xr_tl xr_s8" style="top: 223px;">#End Region</span>
+  <span class="xr_tl xr_s8" style="top: 243px;">'Activity module</span>
+  <span class="xr_tl xr_s8" style="top: 253px;">Sub Process_Globals</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 263px;">Dim Serial1 As Serial</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 273px;">Dim TextReader1 As TextReader</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 283px;">Dim Timer1 As Timer</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 293px;">Dim connected As Boolean</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 304px;">Dim LecturaFallida As Int </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 314px;">Dim BufferRx(8) As Char</span>
+  <span class="xr_tl xr_s8" style="top: 324px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 344px;">Sub Globals</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 354px;">Dim TramLog As Label </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 364px;">Dim LAmp2 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 374px;">Dim LAmp1 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 384px;">Dim LAmp0 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 394px;">Dim LVol2 As Label </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 404px;">Dim LVol1 As Label </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 414px;">Dim LVol0 As Label </span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 424px;">Dim LPWM2 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 434px;">Dim LPWM1 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 444px;">Dim LPWM0 As Label</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 454px;">Dim ON_OFF As Label 'S=ON, N=OFF.</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 464px;">Dim Aviso As Beeper</span>
+  <span class="xr_tl xr_s8" style="top: 474px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 495px;">Sub Activity_Create(FirstTime As Boolean)</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 505px;">If FirstTime Then</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 515px;">Serial1.Initialize("Serial1")</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 525px;">Timer1.Initialize("Timer1", 80)</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 535px;">End If</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 555px;">Activity.LoadLayout("layoutsamsung")</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 565px;">Activity.AddMenuItem("Connect", "mnuConnect")</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 575px;">Activity.AddMenuItem("Disconnect", "mnuDisconnect")</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 595px;">mnuConnect_Click</span>
+  <span class="xr_tl xr_s8" style="top: 605px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 625px;">Sub Activity_Resume</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 635px;">If Serial1.IsEnabled = False Then</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 645px;">Msgbox("Please enable Bluetooth.", "")</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 655px;">Else</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 665px;">Serial1.Listen 'listen for incoming connections</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 675px;">End If</span>
+  <span class="xr_tl xr_s8" style="top: 686px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 706px;">Sub Serial1_Connected (Success As Boolean)</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 716px;">If Success Then</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 726px;">ToastMessageShow("Connected successfully", False)</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 736px;">TextReader1.Initialize(Serial1.InputStream)</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 746px;">Timer1.Enabled = True</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 756px;">connected = True</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 766px;">Aviso.Initialize2(500,2000,4) </span>
+  <span class="xr_tl xr_s8" style="left: 227px; top: 766px;">'500 milisegundos</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 776px;">Aviso.Beep</span>
+  <span class="xr_tl xr_s8" style="left: 227px; top: 776px;">'2000 Hz,&nbsp; 4 volu.</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 796px;">Else</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 806px;">connected = False</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 816px;">Timer1.Enabled = False</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 826px;">Msgbox(LastException.Message, "Error connecting.")</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 836px;">End If</span>
+  <span class="xr_tl xr_s8" style="top: 846px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 866px;">Sub mnuConnect_Click</span>
+  <span class="xr_tl xr_s8" style="top: 877px;">&nbsp;&nbsp;&nbsp; Serial1.Connect("20:13:09:13:30:04")</span>
+  <span class="xr_tl xr_s8" style="top: 887px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 907px;">Sub mnuDisconnect_Click</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 917px;">Serial1.Disconnect</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 927px;">connected = False</span>
+  <span class="xr_tl xr_s8" style="top: 937px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 957px;">Sub Activity_Pause (UserClosed As Boolean)</span>
+  <span class="xr_tl xr_s8" style="top: 977px;">End Sub</span>
+  <span class="xr_tl xr_s8" style="top: 997px;">Sub Timer1_Tick</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 1007px;">If connected Then</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 1017px;">If TextReader1.Ready Then 'check if there is any data waiting to be read</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1037px;">Dim Buffer As String</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1047px;">Dim Text As String </span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1068px;">Buffer = TextReader1.ReadLine</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1088px;">LAmp2.Text=Buffer.SubString2(0,1)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1098px;">LAmp1.Text=Buffer.SubString2(1,2)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1108px;">LAmp0.Text=Buffer.SubString2(2,3)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1128px;">LVol2.Text=Buffer.SubString2(3,4)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1138px;">LVol1.Text=Buffer.SubString2(4,5)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1148px;">LVol0.Text=Buffer.SubString2(5,6)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1168px;">LPWM2.Text=Buffer.SubString2(6,7)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1178px;">LPWM1.Text=Buffer.SubString2(7,8)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1188px;">LPWM0.Text=Buffer.SubString2(8,9)</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1208px;">If Buffer.SubString2(9,10)="N" Then</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1218px;">ON_OFF.Visible=True</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1228px;">Else</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1238px;">ON_OFF.Visible=False</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1249px;">End If</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1269px;">TramLog.Text =Buffer</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1289px;">LecturaFallida=0</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 1299px;">Else</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1309px;">LecturaFallida=LecturaFallida+1</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1319px;">If LecturaFallida=10 Then</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1329px;">Aviso.Initialize2(500,700,4) </span>
+  <span class="xr_tl xr_s8" style="left: 302px; top: 1329px;">'500 milisegundos</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1339px;">Aviso.Beep</span>
+  <span class="xr_tl xr_s8" style="left: 302px; top: 1339px;">'700 Hz,&nbsp; 4 volu.</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1349px;">TramLog.Text ="Comunicaci&#243;n interrumpida."</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1359px;">LAmp2.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1369px;">LAmp1.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1379px;">LAmp0.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1389px;">LVol2.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1399px;">LVol1.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1409px;">LVol0.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1419px;">LPWM2.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1429px;">LPWM1.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 151px; top: 1440px;">LPWM0.Text ="-"</span>
+  <span class="xr_tl xr_s8" style="left: 113px; top: 1450px;">End If</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 1460px;">End If</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 1470px;">Else</span>
+  <span class="xr_tl xr_s8" style="left: 76px; top: 1480px;">ToastMessageShow("B.T. Desconectado.", False)</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 1490px;">End If</span>
+  <span class="xr_tl xr_s8" style="left: 38px; top: 1510px;">Buffer=""</span>
+  <span class="xr_tl xr_s8" style="top: 1530px;">End Sub</span>
+ </div>
+ <div class="xr_s1" style="position: absolute; left:54px; top:192px;">
+  <span class="xr_tl xr_s1" style="top: -19px;"><span id="Empezando:32a:32producir">Empezando a producir</span></span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:56px; top:221px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Ya tenemos todo montado, solo queda poner en marcha el motor para dar vida a nuestra criatura y empezar a producir HHO. </span>
+  <span class="xr_tl xr_s2" style="top: 17px;">En un primer momento necesitaremos comprobar muy a menudo el comportamiento del sistema a trav&#233;s del smartphone, supervisando el consumo de corriente </span>
+  <span class="xr_tl xr_s2" style="top: 31px;">y ver los ajustes que realiza autom&#225;ticamente el circuito cuando est&#225; sometido a cambios de temperatura y vibraciones. Mantendremos en un lugar visible los </span>
+  <span class="xr_tl xr_s2" style="top: 44px;">datos que nos proporciona el sistema (cuidadito con la conducci&#243;n) y que en un futuro solo lo utilizaremos eventualmente para mantenimiento.</span>
+  <span class="xr_tl xr_s2" style="top: 72px;">El interruptor de activaci&#243;n es algo que tampoco es necesario que sea manipulado constantemente. Lo dejamos activado y cuando dejemos el veh&#237;culo parado </span>
+  <span class="xr_tl xr_s2" style="top: 86px;">el sistema se desconecta con toda seguridad. Esto &#250;ltimo que comento solo es v&#225;lido para el montaje tal cual est&#225; representado. Cualquier modificaci&#243;n del </span>
+  <span class="xr_tl xr_s2" style="top: 100px;">mismo puede saltarse la cadena de seguridad de desconexi&#243;n y ocasionar graves consecuencias.</span>
+  <span class="xr_tl xr_s2" style="top: 128px;">Volvamos al modo de como supervisar el sistema. El dato m&#225;s relevante que necesitamos conocer es el de la corriente consumida, siempre tiene que ser inferior </span>
+  <span class="xr_tl xr_s2" style="top: 142px;">al m&#225;ximo que hayamos programado. Podr&#225; empezar en un valor bajo pero poco a poco seg&#250;n el sistema empiece a tomar temperatura se tiene que estabilizar </span>
+  <span class="xr_tl xr_s2" style="top: 156px;">en el marcado en la variable &#8220;Imax&#8221; del firmware del PIC.</span>
+  <span class="xr_tl xr_s2" style="top: 184px;">El resto de indicadores nos informaran de lo siguiente:</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 198px;">V:</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 212px;">Nivel de tensi&#243;n de alimentaci&#243;n. Normalmente tendremos un valor superior a 14V. Solo en casos puntuales de excesiva demanda de corriente este puede </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 226px;">bajar hasta los 13,9V.</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 253px;">%pwm:</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 267px;">Nivel de regulaci&#243;n del m&#243;dulo PWM. Un valor de 100% informa que se est&#225; entregando toda la energ&#237;a al sistema. Seg&#250;n la necesidad de acortar el paso </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 281px;">de corriente, este valor ir&#225; bajando para ajustarse al valor &#8220;Imax&#8221;.</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 309px;">Icono c&#233;lula: </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 323px;">Tengo representado un dibujo de la c&#233;lula que se muestra &#8220;operativa&#8221; cuando est&#225; en funcionamiento y con un aspa roja cuando se ha cortado la </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 337px;">producci&#243;n de HHO. </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 365px;">Ventana de notificaciones:</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 379px;">En la esquina inferior izquierda tenemos una peque&#241;a regi&#243;n donde se muestra informaci&#243;n del estado de la comunicaci&#243;n con la electr&#243;nica de control.</span>
+  <span class="xr_tl xr_s2" style="top: 407px;">Tal y como he mencionado, si por las condiciones de circulaci&#243;n (retenci&#243;n motor) no fuese necesario producir HHO, esta queda reflejada en el icono de la </span>
+  <span class="xr_tl xr_s2" style="top: 421px;">c&#233;lula con el aspa en rojo y el valor de consumo de corriente caer&#237;a a 0A (el valor V puede variar pero en menor medida).</span>
+  <span class="xr_tl xr_s2" style="top: 462px;">Completo toda esta informaci&#243;n con el c&#243;digo realizado en B4A para smartphone android:</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:36px; top:3243px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">En esta foto se muestran las indicaciones en pleno funcionamiento. </span>
+  <span class="xr_tl xr_s4" style="top: 15px;">El consumo de corriente se encuentra entre &#8220;Imin:10A&#8221; e &#8220;Imax:11&#8221;, la tensi&#243;n de </span>
+  <span class="xr_tl xr_s4" style="top: 28px;">bater&#237;a por encima de 14V y una regulaci&#243;n del PWM del 76%. </span>
+  <span class="xr_tl xr_s4" style="top: 54px;">Todos estos valores son normales y nos muestra el sistema regulando la corriente en </span>
+  <span class="xr_tl xr_s4" style="top: 66px;">funci&#243;n del estado del electrolito.</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:120px; top:2390px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Un c&#243;digo muy ligero y sin grandes pretensiones nos servir&#225; para monitorizar el sistema.</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:55px; top:2802px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Con el sistema desconectado se muestra que no hay producci&#243;n de HHO. No existe </span>
+  <span class="xr_tl xr_s4" style="top: 2px;">lectura para el resto de valores.</span>
+ </div>
+ <div class="xr_s4" style="position: absolute; left:535px; top:2802px;">
+  <span class="xr_tl xr_s4" style="top: -10px;">Con el contacto puesto y el motor parado seguimos sin producir HHO pero ya </span>
+  <span class="xr_tl xr_s4" style="top: 2px;">recibimos informaci&#243;n.</span>
+ </div>
+ <div class="xr_s1" style="position: absolute; left:35px; top:3556px;">
+  <span class="xr_tl xr_s1" style="top: -19px;"><span id="Conclusiones">Conclusiones</span></span>
+ </div>
+ <div class="xr_s2" style="position: absolute; left:36px; top:3593px;">
+  <span class="xr_tl xr_s2" style="top: -11px;">Para tener un dato objetivo que nos indique un ahorro de combustible real, es necesario que las pruebas se realicen en condiciones semejantes cuando estamos </span>
+  <span class="xr_tl xr_s2" style="top: 3px;">con o sin el sistema HHO. Hay que a&#241;adir influencia externa como tr&#225;fico y condiciones clim&#225;ticas que de uno u otro modo afectan a nuestra manera de </span>
+  <span class="xr_tl xr_s2" style="top: 17px;">conducir.</span>
+  <span class="xr_tl xr_s2" style="top: 44px;">Tengo que hilar tan fino por que no es de esperar que la reducciones del consumo sean tan llamativas en motores optimizados como los HDI o en cualquier otro </span>
+  <span class="xr_tl xr_s2" style="top: 58px;">modelo de hoy en d&#237;a.</span>
+  <span class="xr_tl xr_s2" style="top: 86px;">Lo primero es establecer el consumo real sin aplicar hidr&#243;geno en un recorrido que se efect&#250;e habitualmente. El consumo que se obtenga repetido m&#225;s n&#250;mero </span>
+  <span class="xr_tl xr_s2" style="top: 100px;">de veces ser&#225; el v&#225;lido como muestra para poder comparar.</span>
+  <span class="xr_tl xr_s2" style="top: 128px;">Las pruebas fueron realizadas llenado el dep&#243;sito en su totalidad y calculando el valor medio de consumo y/o kil&#243;metros recorridos.</span>
+  <span class="xr_tl xr_s2" style="top: 156px;">Para evitar que de manera inconsciente pudiera alterar el modo de conducci&#243;n he sido lo m&#225;s disciplinado posible en aplicar los mismos vicios y picard&#237;as en el </span>
+  <span class="xr_tl xr_s2" style="top: 170px;">ahorro de combustible con y sin el HHO, como aprovechar al m&#225;ximo las inercias en ciudad, utilizar punto muerto en momentos puntuales y tener cuidado con </span>
+  <span class="xr_tl xr_s2" style="top: 184px;">las aceleraciones bruscas.</span>
+  <span class="xr_tl xr_s2" style="top: 212px;">Con todo esto he obtenido unas cifras sin el HHO de 3,6l a los 100 en tres dep&#243;sitos y 3,5l en otros dos, superando los 1500Km por dep&#243;sito. Se ha circulado un </span>
+  <span class="xr_tl xr_s2" style="top: 226px;">70% carretera (entre 90 y 120Km/h) y el 30% ciudad, con el 70% del tiempo ocupado por una sola persona y recorrido generalmente llano. El motor es el 1.6 de </span>
+  <span class="xr_tl xr_s2" style="top: 240px;">90CV con 5 velocidades consumiendo gasoil del caro. Con estas cifras tan sorprendentes se lo he puesto muy dif&#237;cil al HHO para que las pueda rebajar.&nbsp; </span>
+  <span class="xr_tl xr_s2" style="top: 267px;">Activando el HHO la reducci&#243;n del gasto de combustible tal y como me esperaba no ha sido tan llamativa. Una mejora muy sutil de 100Km que no compensa </span>
+  <span class="xr_tl xr_s2" style="top: 281px;">claramente todo el trabajo realizado. Siempre se ha mantenido un consumo de corriente de 10A y una producci&#243;n de HHO pr&#243;xima a los 3/4 litros minuto.</span>
+  <span class="xr_tl xr_s2" style="top: 309px;">Aplicando el sistema a una conducci&#243;n m&#225;s &#8220;normal&#8221; es posible que la diferencia en el ahorro de combustible ser&#237;an m&#225;s abultado.</span>
+  <span class="xr_tl xr_s2" style="top: 337px;">Lo que ha mejorado es el comportamiento del motor. Ahora se tienen sensaciones m&#225;s agradables en cuanto a suavidad de conducci&#243;n. Una aceleraci&#243;n m&#225;s </span>
+  <span class="xr_tl xr_s2" style="top: 351px;">el&#225;stica que reduce el efecto &#8220;tractor&#8221; cl&#225;sico de los diesel, sin penalizar el consumo ni observar sufrimiento aparente del motor. No llega a comportarse como </span>
+  <span class="xr_tl xr_s2" style="top: 365px;">un gasolina pero muestra una aceleraci&#243;n adictiva cuando pisamos el acelerador desde bajas revoluciones.</span>
+  <span class="xr_tl xr_s2" style="top: 393px;">Est&#225; claro que algo hace, pero si lo que andamos buscado es ahorro de combustible lo m&#225;s efectivo es cambiar la manera de conducir.</span>
+  <span class="xr_tl xr_s2" style="top: 421px;">Esto no tiene por que quedarse aqu&#237;, puede modificarse el comportamiento del sistema modificando la producci&#243;n de HHO en funci&#243;n de las revoluciones </span>
+  <span class="xr_tl xr_s2" style="top: 435px;">(aumentado a altas revoluciones y dejando en reposo el sistema en ralent&#237;). Aumentar el rendimiento de la c&#233;lula lo m&#225;ximo posible reduciendo el consumo de </span>
+  <span class="xr_tl xr_s2" style="top: 449px;">corriente ser&#237;a el mejor de los caminos para conseguir reducir el consumo m&#225;s evidentes.</span>
+  <span class="xr_tl xr_s2" style="top: 490px;">Aclaraci&#243;n:</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 504px;">La producci&#243;n de HHO no es gratuita, estamos consumiendo 10A de forma continua que salen del combustible (aprox. 150W). Esta potencia se la </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 518px;">cargamos al motor que tenemos que compensar con el aumento de rendimiento que deber&#237;a de proporcionarnos el hidr&#243;geno en la combusti&#243;n. </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 546px;">Hay que entender que el HHO es como a&#241;adir un &#8220;aditivo&#8221; que mejora la combusti&#243;n y por ello aprovechar&#237;amos mejor el combustible. Esto depender&#225; </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 560px;">del tipo de motor, tecnolog&#237;a del mismo y muchos otros factores te&#243;ricos que pueden aburrir a las vacas. </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 588px;">El hidr&#243;geno en extremadamente explosivo, tiene m&#225;s poder energ&#233;tico que la gasolina, por esto, la producci&#243;n de HHO debe ser consumida </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 602px;">instant&#225;neamente y se desaconseja su almacenamiento.</span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 630px;">Toda esta informaci&#243;n tiene car&#225;cter divulgativo y da a conocer mi experiencia con un sistema HHO en motores HDI. </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 658px;">No me hago responsable de cualquier da&#241;o ni perjuicio que pueda producirse por la realizaci&#243;n y/o manipulaci&#243;n de cualquier sistema de este tipo, o la </span>
+  <span class="xr_tl xr_s2" style="left: 38px; top: 671px;">aplicaci&#243;n de las notas aqu&#237; expuestas.</span>
+ </div>
+<div class="xr_ap" id="xr_xri" style="width: 1005px; height: 4382px; overflow:hidden;">
+ <a href="default_12.htm" onclick="return(xr_nn());">
+  <img class="xr_ap" src="default_htm_files/2287.png" alt="" title="" onmousemove="xr_mo(this,0,event)" style="left: 488px; top: 4319px; width: 53px; height: 52px;"/>
+ </a>
+ <div class="Normal_text" style="position: absolute; left:425px; top:4347px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;">
+  <span class="xr_tl Normal_text" style="top: -10px;font-family:Trebuchet MS, Tahoma, sans-serif;font-size:11px;color:#4C4C4C;"><a href="default_12.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" >P&#225;g. anterior</a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/455.jpg" alt="" title="" style="left: 519px; top: 2433px; width: 455px; height: 342px;"/>
+ <img class="xr_ap" src="default_htm_files/456.jpg" alt="" title="" style="left: 40px; top: 2433px; width: 455px; height: 342px;"/>
+ <img class="xr_ap" src="default_htm_files/457.jpg" alt="" title="" style="left: 522px; top: 2854px; width: 452px; height: 603px;"/>
+ <img class="xr_ap" src="default_htm_files/458.jpg" alt="" title="" style="left: 36px; top: 2854px; width: 456px; height: 342px;"/>
+ <img class="xr_ap" src="default_htm_files/53.png" alt="" title="" style="left: 19px; top: 18px; width: 973px; height: 120px;"/>
+ <img class="xr_ap" src="default_htm_files/15.png" alt="" title="" style="left: 596px; top: 94px; width: 162px; height: 150px;"/>
+ <!--[if IE]>
+ <img class="xr_ap" src="default_htm_files/947.png" alt="Sistema HHO" title="" style="left: 391px; top: 70px; width: 235px; height: 50px;"/>
+ <![endif]-->
+ <!--[if !IE]>-->
+ <div class="Heading_1" style="position: absolute; left:394px; top:109px;font-family:Impact;font-weight:normal;font-size:43px;color:#FFFFFF; text-shadow: 3px 3px 6px rgba(0,0,0,0.25);">
+  <h1 class="xr_tl Heading_1" style="top: -43px;font-family:Impact;font-weight:normal;font-size:43px;color:#FFFFFF;margin:0;">Sistema HHO</h1>
+ </div>
+ <!--<![endif]-->
+ <img class="xr_ap" src="default_htm_files/54.png" alt="" title="" style="left: 990px; top: 26px; width: 2px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:22px; top:37px;font-weight:bold;font-size:11px;color:#FFF7FB;">
+  <span class="xr_tc Normal_text" style="left: -2px; top: -10px; width: 129px;font-weight:bold;font-size:11px;color:#FFF7FB;">Bricos Peugeot 308</span>
+ </div>
+ <div class="Normal_text" style="position: absolute; left:368px; top:37px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: 33px; top: -10px; width: 37px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default.php" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Inicio</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/901.png" alt="" title="" style="left: 336px; top: 26px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:510px; top:37px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -11px; top: -10px; width: 169px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_2.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Modificaciones Interiores</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/902.png" alt="" title="" style="left: 500px; top: 26px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:701px; top:37px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -5px; top: -10px; width: 101px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_7.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Diagnosis OBD</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/903.png" alt="" title="" style="left: 663px; top: 26px; width: 3px; height: 17px;"/>
+ <div class="Normal_text" style="position: absolute; left:872px; top:37px;font-weight:bold;font-size:11px;color:#FFFFFF;">
+  <span class="xr_tc Normal_text" style="left: -6px; top: -10px; width: 88px;font-weight:bold;font-size:11px;color:#FFFFFF;"><a href="default_10.htm" onclick="return(xr_nn());" onmousemove="xr_mo(this,0)" ><span class="Normal_text" style="text-decoration:underline;font-weight:bold;font-size:11px;color:#FFFFFF;">Sistema HHO</span></a></span>
+ </div>
+ <img class="xr_ap" src="default_htm_files/904.png" alt="" title="" style="left: 826px; top: 26px; width: 3px; height: 17px;"/>
+ <div id="xr_xo0" class="xr_ap" style="left:0; top:0; width:1005px; height:100px; visibility:hidden;">
+ <a href="" onclick="return(false);">
+ </a>
+ </div>
+ <div id="xr_xd0"></div>
+</div>
+</div>
+<!--[if lt IE 7]><script type="text/javascript" src="default_htm_files/png.js"></script><![endif]-->
+<!--[if IE]><script type="text/javascript">xr_aeh()</script><![endif]--><!--[if !IE]>--><script type="text/javascript">window.addEventListener('load', xr_aeh, false);</script><!--<![endif]-->
+</body>
+</html>
